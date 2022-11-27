@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HHS Hillers</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="overlay"></div>
+      <!-- <div class="overlays">
+        <div class="overlay green"></div>
+        <div class="overlay orange"></div>
+      </div> -->
+      <div class="class-div">
+        <h1 class="class glow">CLASS</h1>
+      </div>
+      <h2 class="of">OF</h2>
+      <h1 class="h1-year">
+        <span class="h1-year-digit" style="--i: 2">2</span>
+        <span class="h1-year-digit" style="--i: 2.5">0</span>
+        <span class="h1-year-digit" style="--i: 3">0</span>
+        <span class="h1-year-digit" style="--i: 3.5">0</span>
+      </h1>
+
+      <h3 class="output">
+        #<span class="change change-span">Game </span> Chang'ah!
+      </h3>
+    </div>
+
+    <script>
+      setTimeout(() => {
+        document.querySelector(".change-span").classList.add("scale");
+
+        document.querySelector(".change-span").innerHTML = "LIFE";
+        document.querySelector(".change-span").classList.remove("change");
+      }, 5000);
+    </script>
+  </body>
+</html>
