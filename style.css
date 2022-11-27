@@ -88,6 +88,16 @@ body {
   animation-delay: calc(var(--i) * 1s);
 }
 
+.small {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10%;
+  opacity: 0;
+  animation: fadein 1s forwards;
+  animation-delay: 5s;
+}
+
 @keyframes fadein {
   100% {
     opacity: 1;
